@@ -5,6 +5,7 @@
 	<title>Home</title>
 </head>
 <body>
+
 <h1>
 	Hello world!  
 </h1>
@@ -14,7 +15,7 @@ afasfddsafasdfasfdadsfd
 <h2>GIT TEST TEST TEST TEST TEST</h2>
 <ul>
 <li>BugFix_1 </li>
-
+<li>BugFix_1_2 </li>
 
 </ul>
 </body>
