@@ -2,7 +2,7 @@ package com.choa.notice;
 
 import java.util.List;
 
-import javax.inject.Inject;
+
 
 import org.springframework.stereotype.Service;
 
@@ -13,14 +13,14 @@ import com.choa.util.RowMaker;
 @Service
 //NoticeService noticeService = new NoticeService();
 public class NoticeService {
-	@Inject
+	
 	private NoticeDAO noticeDAO;
 	
 	//Constructor
 	/*public NoticeService(NoticeDAO noticeDAO) {
 		this.noticeDAO = noticeDAO;
 	}*/
-	
+	/*
 	//View
 	public NoticeDTO noticeView(int num) throws Exception{
 		return noticeDAO.noticeView(num);
@@ -50,5 +50,5 @@ public class NoticeService {
 		return noticeDAO.noticeDelete(num);
 	}
 
-
+*/
 }

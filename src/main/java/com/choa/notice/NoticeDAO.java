@@ -14,17 +14,17 @@ import org.springframework.stereotype.Repository;
 import com.choa.util.DBConnector;
 import com.choa.util.RowMaker;
 
-@Repository
+
 //NoticeDAO noticeDao = new NoticeDAO();
 public class NoticeDAO {
 
-	@Inject
+
 	private DataSource dataSource;
 	
 	
-	/*public void setDataSource(DataSource dataSource) {
+	public void setDataSource(DataSource dataSource) {
 		this.dataSource = dataSource;
-	}*/
+	}
 	//View
 	public NoticeDTO noticeView(int num) throws Exception{
 		Connection con = dataSource.getConnection();
