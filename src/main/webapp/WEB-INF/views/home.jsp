@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>
-
+<a href="./notice/noticeList">NoticeList</a>
 	Hello world!  
 </h1>
 

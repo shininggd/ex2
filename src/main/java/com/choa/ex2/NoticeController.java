@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,10 +22,18 @@ public class NoticeController {
 	@Inject//type
 	private NoticeService noticeService;
 	
+	
+	@RequestMapping(value="notice/test")
+	public void test(){
+		System.out.println(noticeService);
+		noticeService.test();
+	}
+	
 	/*폼으로 감*/
 	@RequestMapping(value="noticeWrite",method=RequestMethod.GET)
-	public void write(){
+	public void write(Model model){
 		System.out.println("Write로 가자");
+		model.addAttribute("path", "Write");
 	}
 	
 	/*프로세스로 감*/
@@ -45,10 +54,12 @@ public class NoticeController {
 	}
 	/*폼으로 감*/
 	@RequestMapping(value="noticeUpdate",method=RequestMethod.GET)
-	public void update(int num, Model model) throws Exception{
+	public String update(int num, Model model) throws Exception{
 		NoticeDTO noticeDTO = noticeService.noticeView(num);
 		System.out.println("Update로 가자");
 		model.addAttribute("dto", noticeDTO);
+		model.addAttribute("path", "Update");
+		return "notice/noticeWrite";
 		
 	}
 	
