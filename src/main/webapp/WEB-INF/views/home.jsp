@@ -5,12 +5,12 @@
 	<title>Home</title>
 </head>
 <body>
-<<<<<<< HEAD
+
 <h1>Master add</h1>
 <h1>Master add2</h1>
-=======
 
->>>>>>> BugFix_1
+
+
 <h1>
 
 	Hello world!  
@@ -22,7 +22,11 @@ afasfddsafasdfasfdadsfd
 <ul>
 <li>BugFix_1 </li>
 <li>BugFix_1_2 </li>
-<li>master add this?</li>
+
+
+<li>conflict_1</li>
+
+
 </ul>
 </body>
 </html>
