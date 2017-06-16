@@ -14,6 +14,6 @@
 내용:<br> <textarea rows="20" cols="20" name="contents">${dto.contents }</textarea><br>
 	<button>Write</button>
 </form>
-
+하악
 </body>
 </html>
